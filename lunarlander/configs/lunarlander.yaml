@@ -1,0 +1,47 @@
+# Configuration for LunarLander-v2
+environment:
+  name: "LunarLander-v2"
+  seed: 42
+
+ppo:
+  learning_rate: 0.0003
+  n_steps: 2048
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.01
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+
+training:
+  total_timesteps: 200000
+  eval_freq: 10000
+  n_eval_episodes: 20
+  save_freq: 40000
+  log_interval: 10
+
+camram:
+  k_neighbors: 10
+  max_memory_per_action: 15000
+  epsilon: 0.2
+  epsilon_decay: 0.995
+  epsilon_min: 0.01
+  gamma: 0.99
+  learning_rate: 0.1
+  total_episodes: 2000
+  eval_freq: 100
+  n_eval_episodes: 20
+
+viper:
+  max_depth: 7
+  min_samples_split: 10
+  n_batch_rollouts: 50
+  n_test_rollouts: 20
+
+hybrid:
+  gating_mode: "confidence"
+  confidence_threshold: 0.7
+  familiarity_threshold: 0.1
+  performance_window: 50

@@ -1,0 +1,107 @@
+VIPER Decision Tree - Text Representation
+======================================================================
+Tree Depth: 7
+Number of Leaves: 94
+Training Accuracy: 0.6901
+======================================================================
+
+Action Mapping:
+  0: Do Nothing
+  1: Fire Left
+  2: Fire Main
+  3: Fire Right
+
+======================================================================
+
+|--- y_vel <= 0.36
+|   |--- angle <= 0.00
+|   |   |--- angle <= -0.28
+|   |   |   |--- y_vel <= 0.26
+|   |   |   |   |--- angle <= -0.35
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- angle >  -0.35
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- y_vel >  0.26
+|   |   |   |   |--- x_pos <= -0.25
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- x_pos >  -0.25
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |--- angle >  -0.28
+|   |   |   |--- y_pos <= 1.86
+|   |   |   |   |--- y_vel <= 0.31
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- y_vel >  0.31
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- y_pos >  1.86
+|   |   |   |   |--- angular_vel <= -0.08
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- angular_vel >  -0.08
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |--- angle >  0.00
+|   |   |--- x_vel <= -0.65
+|   |   |   |--- angular_vel <= -0.04
+|   |   |   |   |--- weights: [0.00, 0.00, 4.00, 4.00] class: 2
+|   |   |   |--- angular_vel >  -0.04
+|   |   |   |   |--- weights: [0.00, 0.00, 0.00, 14.00] class: 3
+|   |   |--- x_vel >  -0.65
+|   |   |   |--- y_vel <= 0.32
+|   |   |   |   |--- angle <= 0.25
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- angle >  0.25
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- y_vel >  0.32
+|   |   |   |   |--- y_pos <= 1.81
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- y_pos >  1.81
+|   |   |   |   |   |--- truncated branch of depth 3
+|--- y_vel >  0.36
+|   |--- angular_vel <= -0.01
+|   |   |--- y_pos <= 2.14
+|   |   |   |--- x_pos <= 0.43
+|   |   |   |   |--- angle <= -0.07
+|   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- angle >  -0.07
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- x_pos >  0.43
+|   |   |   |   |--- x_pos <= 0.54
+|   |   |   |   |   |--- weights: [7.00, 0.00, 0.00, 0.00] class: 0
+|   |   |   |   |--- x_pos >  0.54
+|   |   |   |   |   |--- weights: [1.00, 4.00, 0.00, 0.00] class: 1
+|   |   |--- y_pos >  2.14
+|   |   |   |--- angular_vel <= -0.05
+|   |   |   |   |--- y_vel <= 0.38
+|   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- y_vel >  0.38
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- angular_vel >  -0.05
+|   |   |   |   |--- y_vel <= 0.39
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- y_vel >  0.39
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |--- angular_vel >  -0.01
+|   |   |--- y_pos <= 1.98
+|   |   |   |--- y_vel <= 0.37
+|   |   |   |   |--- angle <= -0.03
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- angle >  -0.03
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- y_vel >  0.37
+|   |   |   |   |--- x_pos <= 0.13
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- x_pos >  0.13
+|   |   |   |   |   |--- weights: [4.00, 1.00, 0.00, 0.00] class: 0
+|   |   |--- y_pos >  1.98
+|   |   |   |--- y_vel <= 0.59
+|   |   |   |   |--- x_pos <= 0.59
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- x_pos >  0.59
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- y_vel >  0.59
+|   |   |   |   |--- y_pos <= 5.66
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- y_pos >  5.66
+|   |   |   |   |   |--- truncated branch of depth 3
+
+
+======================================================================
+Note: Tree shows top 4 levels. Full tree has depth 7
